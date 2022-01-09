@@ -3,18 +3,6 @@ import PageTitle from '../../components/layout/PageTitle'
 import SectionTitle from '../../components/layout/SectionTitle'
 
 function merge(string1, string2) {
-  //   let merge = ''
-  //   for (let i = 0; i < string1.length + string2.length; i++) {
-  //     if (
-  //       typeof string1[i] !== 'undefined' &&
-  //       typeof string2[i] !== 'undefined'
-  //     ) {
-  //       merge += string1[i] + string2[i]
-  //     } else {
-  //       merge += ''
-  //     }
-  //   }
-  //   return merge
   return [...string1].map((e, i) => `${e}${string2[i] || ''}`).join('')
 }
 
